@@ -1,0 +1,4 @@
+a = int(input())
+per_10 = a * 0.9
+disc_100 = a - 100
+print(int(min(per_10, disc_100)))
