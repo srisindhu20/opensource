@@ -1,0 +1,8 @@
+s=input()
+res=""
+for ch in s:
+    if 65<=ord(ch)<=90:
+        res+=chr(ord(ch)+32)
+    else:
+        res+=chr(ord(ch)-32)
+print(res)
