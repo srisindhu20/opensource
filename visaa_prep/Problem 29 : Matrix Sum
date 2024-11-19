@@ -1,0 +1,8 @@
+n=int(input())
+m=[]
+for _ in range(n):
+    m.append(list(map(int, input().split())))
+rs = [sum(row) for row in m]
+cs = [sum(m[i][j] for i in range(n)) for j in range(n)]
+res = [rs[i] + cs[i] for i in range(n)]
+print(" ".join(map(str,res)))
