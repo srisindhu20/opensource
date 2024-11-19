@@ -1,0 +1,16 @@
+n=int(input())
+arr=list(map(int,input().split()))
+k=int(input())
+l=0
+r=n-1
+while l<=r:
+    mid=(l+r)//2
+    if (arr[mid])==k:
+        print(mid)
+        break
+    elif (arr[mid])<k:
+        l=mid+1
+    else:
+        r=mid-1
+if (l>r):
+    print("-1")
