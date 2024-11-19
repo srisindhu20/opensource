@@ -1,0 +1,10 @@
+def mtp():
+    n=int(input())
+    s=list(map(int,input().split()))
+    s.sort(reverse=True)
+    for i in range(n-2):
+        if s[i]<s[i+1]+s[i+2]:
+            return s[i]+s[i+1]+s[i+2]
+    return -1
+res=mtp()
+print(res)
