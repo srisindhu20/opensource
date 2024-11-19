@@ -1,0 +1,9 @@
+s=input()
+vowels=0
+cons=0
+for char in s:
+    if char.lower() in ['a','e','i','o','u']:
+        vowels = vowels+1
+    elif char.isalpha():
+        cons = cons + 1
+print(f"{vowels},{cons}")
